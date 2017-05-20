@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Name>Gitlab Runner</Name>
-  <Description>Description</Description>
+  <Description>You can have your own private Gitlab runner, hosted on your unRAID server</Description>
   <Registry>https://hub.docker.com/r/shaungreen/unraid-gitlab-runner/</Registry>
   <Repository>shaungreen/unraid-gitlab-runner/</Repository>
   <BindTime>true</BindTime>
@@ -36,7 +36,7 @@
     Default="https://gitlab.com/ci"
     Description="URL that the runner will connect to when registering."
     Required="true"
-    />
+    >url</Config>
   <Config
     Name="Token"
     Type="Variable"
