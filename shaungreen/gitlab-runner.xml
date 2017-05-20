@@ -34,7 +34,7 @@
     Type="Variable"
     Target="GITLAB_CI_URL"
     Default="https://gitlab.com/ci"
-    Description="URL that the runner will connect to to register."
+    Description="URL that the runner will connect to when registering."
     Required="true"
     />
   <Config
@@ -49,7 +49,7 @@
     Type="Variable"
     Target="GITLAB_CI_DESC"
     Default="private unRAID runner"
-    Description="The description of this runner that will appear in your pipelines"
+    Description="The description of this runner that will appear in your pipelines."
     Required="true"
     />
   <Config
@@ -57,7 +57,7 @@
     Type="Variable"
     Target="GITLAB_CI_EXECUTOR"
     Default="docker"
-    Description="e.g. shell, docker, docker-ssh, ssh"
+    Description="e.g. shell, docker, docker-ssh, ssh."
     Required="true"
     />
   <Config
@@ -65,7 +65,7 @@
     Type="Variable"
     Target="GITLAB_CI_IMAGE"
     Default="alpine:latest"
-    Description="Default docker image to use if none specified in .gitlab-ci.yml"
+    Description="Default docker image to use if none specified in .gitlab-ci.yml."
     Required="true"
     />
 </Container>
