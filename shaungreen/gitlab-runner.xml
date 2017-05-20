@@ -43,7 +43,7 @@
     Target="GITLAB_CI_TOKEN"
     Description="The token issued by gitlab.com that will is used during runner registration."
     Required="true"
-    />
+    >token</Config>
   <Config
     Name="Description"
     Type="Variable"
@@ -51,7 +51,7 @@
     Default="private unRAID runner"
     Description="The description of this runner that will appear in your pipelines."
     Required="true"
-    />
+    >description</Config>
   <Config
     Name="Executor"
     Type="Variable"
