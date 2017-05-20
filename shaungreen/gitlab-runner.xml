@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2017-05-20</Date>
+  <Beta>False</Beta>
+  <Category>MediaApp:Video</Category>
+  <Name>Gitlab Runner</Name>
+  <Project>https://gitlab.com</Project>
+  <Changes>
+    changes go here
+  </Changes>
+  <Overview>
+    Use your unRAID server to run your own local copies of a gitlab runner.
+  </Overview>
+  <Description>
+    Use your unRAID server to run your own local copies of a gitlab runner.
+  </Description>
+  <Registry>https://hub.docker.com/r/shaungreen/unraid-gitlab-runner/</Registry>
+  <GitHub>https://gitlab.com/shaungreen/dockerapp-unraid-gitlab-runner</GitHub>
+  <Repository>shaungreen/dockerapp-unraid-gitlab-runner</Repository>
+  <Support>http://google.com</Support>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/GitlabRunner</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:32500]/web/index.html</WebUI>
+  <Banner></Banner>
+  <Icon>https://gitlab.com/uploads/project/avatar/13083/logo-extra-whitespace.png</Icon>
+</Containers>
