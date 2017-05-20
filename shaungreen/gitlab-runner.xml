@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <Date>2017-05-20</Date>
-  <Beta>False</Beta>
-  <Category>MediaApp:Video</Category>
+<Container>
   <Name>Gitlab Runner</Name>
-  <Project>https://gitlab.com</Project>
-  <Changes>
-    changes go here
-  </Changes>
-  <Overview>
-    Use your unRAID server to run your own local copies of a gitlab runner.
-  </Overview>
-  <Description>
-    Use your unRAID server to run your own local copies of a gitlab runner.
-  </Description>
+  <Description>Description</Description>
   <Registry>https://hub.docker.com/r/shaungreen/unraid-gitlab-runner/</Registry>
-  <GitHub>https://gitlab.com/shaungreen/dockerapp-unraid-gitlab-runner</GitHub>
-  <Repository>shaungreen/dockerapp-unraid-gitlab-runner</Repository>
-  <Support>http://google.com</Support>
+  <Repository>shaungreen/unraid-gitlab-runner/</Repository>
   <BindTime>true</BindTime>
-  <Privileged>true</Privileged>
-  <Networking>
-    <Mode>host</Mode>
-    <Publish/>
-  </Networking>
+  <Privileged>false</Privileged>
   <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>2222</HostPort>
+        <ContainerPort>22</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/GitlabRunner</HostDir>
+      <HostDir>/mnt/cache/appdata/GitlabRunner/config</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:32500]/web/index.html</WebUI>
-  <Banner></Banner>
-  <Icon>https://gitlab.com/uploads/project/avatar/13083/logo-extra-whitespace.png</Icon>
-</Containers>
+  <Version>05616fd2</Version>
+  <WebUI/>
+  <Banner/>
+  <Icon/>
+  <ExtraParams/>
+  <Config
+    Name="Gitlab CI URL"
+    Type="Variable"
+    Target="GITLAB_CI_URL"
+    Default="https://gitlab.com/ci"
+    Required="true">url</Config>
+</Container>
