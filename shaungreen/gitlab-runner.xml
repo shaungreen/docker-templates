@@ -9,13 +9,6 @@
   <Environment/>
   <Networking>
     <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>2222</HostPort>
-        <ContainerPort>22</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
   </Networking>
   <Data>
     <Volume>
