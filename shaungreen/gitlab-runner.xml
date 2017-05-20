@@ -30,11 +30,42 @@
   <Icon/>
   <ExtraParams/>
   <Config
-    Name="Gitlab CI URL"
+    Name="CI URL"
     Type="Variable"
     Target="GITLAB_CI_URL"
     Default="https://gitlab.com/ci"
-    Description="URL that the runner will be registered to"
+    Description="URL that the runner will connect to to register."
+    Required="true"
+    />
+  <Config
+    Name="Token"
+    Type="Variable"
+    Target="GITLAB_CI_TOKEN"
+    Description="The token issued by gitlab.com that will is used during runner registration."
+    Required="true"
+    />
+  <Config
+    Name="Description"
+    Type="Variable"
+    Target="GITLAB_CI_DESC"
+    Default="private unRAID runner"
+    Description="The description of this runner that will appear in your pipelines"
+    Required="true"
+    />
+  <Config
+    Name="Executor"
+    Type="Variable"
+    Target="GITLAB_CI_EXECUTOR"
+    Default="docker"
+    Description="e.g. shell, docker, docker-ssh, ssh"
+    Required="true"
+    />
+  <Config
+    Name="Docker image"
+    Type="Variable"
+    Target="GITLAB_CI_IMAGE"
+    Default="alpine:latest"
+    Description="Default docker image to use if none specified in .gitlab-ci.yml"
     Required="true"
     />
 </Container>
