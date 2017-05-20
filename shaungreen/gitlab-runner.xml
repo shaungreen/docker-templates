@@ -34,5 +34,6 @@
     Type="Variable"
     Target="GITLAB_CI_URL"
     Default="https://gitlab.com/ci"
-    Required="true">url</Config>
+    Required="true"
+    />
 </Container>
