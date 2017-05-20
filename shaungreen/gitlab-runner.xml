@@ -8,8 +8,8 @@
     transfer it to the /mnt/cache/appdata/GitlabRunner/config folder on your unRAID server
     and you will have a working runner!
   </Description>
-  <Registry>https://hub.docker.com/r/shaungreen/unraid-gitlab-runner/</Registry>
-  <Repository>shaungreen/unraid-gitlab-runner/</Repository>
+  <Registry>https://hub.docker.com/r/gitlab/gitlab-runner/</Registry>
+  <Repository>gitlab/gitlab-runner</Repository>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Environment/>
