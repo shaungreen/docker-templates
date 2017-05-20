@@ -29,38 +29,9 @@
   <Banner/>
   <Icon/>
   <ExtraParams/>
-  <Config
-    Name="CI URL"
-    Type="Variable"
-    Target="GITLAB_CI_URL"
-    Default="https://gitlab.com/ci"
-    Description="URL that the runner will connect to when registering."
-    Required="true">url</Config>
-  <Config
-    Name="Token"
-    Type="Variable"
-    Target="GITLAB_CI_TOKEN"
-    Description="The token issued by gitlab.com that will is used during runner registration."
-    Required="true">token</Config>
-  <Config
-    Name="Description"
-    Type="Variable"
-    Target="GITLAB_CI_DESC"
-    Default="private unRAID runner"
-    Description="The description of this runner that will appear in your pipelines."
-    Required="true">description</Config>
-  <Config
-    Name="Executor"
-    Type="Variable"
-    Target="GITLAB_CI_EXECUTOR"
-    Default="docker"
-    Description="e.g. shell, docker, docker-ssh, ssh."
-    Required="true">executor</Config>
-  <Config
-    Name="Docker image"
-    Type="Variable"
-    Target="GITLAB_CI_IMAGE"
-    Default="alpine:latest"
-    Description="Default docker image to use if none specified in .gitlab-ci.yml."
-    Required="true">image</Config>
+  <Config Name="CI URL" Type="Variable" Target="GITLAB_CI_URL" Default="https://gitlab.com/ci" Description="URL that the runner will connect to when registering." Required="true">url</Config>
+  <Config Name="Token" Type="Variable" Target="GITLAB_CI_TOKEN" Default="" Description="The token issued by gitlab.com that will is used during runner registration." Required="true">token</Config>
+  <Config Name="Description" Type="Variable" Target="GITLAB_CI_DESC" Default="private unRAID runner" Description="The description of this runner that will appear in your pipelines." Required="true">description</Config>
+  <Config Name="Executor" Type="Variable" Target="GITLAB_CI_EXECUTOR" Default="docker" Description="e.g. shell, docker, docker-ssh, ssh." Required="true">executor</Config>
+  <Config Name="Docker image" Type="Variable" Target="GITLAB_CI_IMAGE" Default="alpine:latest" Description="Default docker image to use if none specified in .gitlab-ci.yml." Required="true">image</Config>
 </Container>
